@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2022 Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -65,27 +65,7 @@ void load_device_properties() {
     std::string hwname = GetProperty("ro.boot.hwname", "");
     std::string region = GetProperty("ro.boot.hwc", "");
 
-    if (hwname == "curtana") {
-        if (region == "Global_TWO") {
-            set_device_props(
-                    "Redmi", "curtana", "Redmi Note 9S");
-        } else if (region == "Global_PA") {
-            set_device_props(
-                    "Redmi", "curtana", "Redmi Note 9S");
-        } else if (region == "India") {
-            set_device_props(
-                    "Redmi", "curtana", "Redmi Note 9 Pro");
-        } else if (region == "Japan") {
-            set_device_props(
-                    "Redmi", "curtana", "Redmi Note 9S");
-        }
-    } else if (hwname == "excalibur") {
-        set_device_props(
-                "Redmi", "excalibur", "Redmi Note 9 Pro Max");
-    } else if (hwname == "gram") {
-        set_device_props(
-                "POCO", "gram", "POCO M2 Pro");
-    } else if (hwname == "joyeuse") {
+    if (hwname == "joyeuse") {
         set_device_props(
                 "Redmi", "joyeuse", "Redmi Note 9 Pro");
     }

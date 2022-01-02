@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Fluid
+# Copyright (C) 2022 Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit from joyeuse device tree
+$(call inherit-product, device/xiaomi/joyeuse/device.mk)
+
+# Inherit some common from AOSP ROM stuff
+$(call inherit-product, vendor/aosp/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_miatoll
-PRODUCT_DEVICE := miatoll
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := SM6250
+PRODUCT_NAME := aosp_joyeuse
+PRODUCT_DEVICE := joyeuse
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi Note 9 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

@@ -1,22 +1,22 @@
 [
   {
-    "remote":      "fluid-devices",
-    "repository":  "device_xiaomi_sdm6250-common",
-    "target_path": "device/xiaomi/sdm6250-common"
+    "remote":      "nekoshirro",
+    "repository":  "platform_device_xiaomi_sm6250-common",
+    "target_path": "device/xiaomi/sm6250-common"
   },
   {
-    "remote":      "fluid-devices",
-    "repository":  "vendor_xiaomi_miatoll",
-    "target_path": "vendor/xiaomi/miatoll"
+    "remote":      "nekoshirro",
+    "repository":  "platform_vendor_xiaomi_joyeuse",
+    "target_path": "vendor/xiaomi/joyeuse"
   },
   {
-    "remote":      "fluid-devices",
-    "repository":  "vendor_xiaomi_sm6250-common",
+    "remote":      "nekoshirro",
+    "repository":  "platform_vendor_xiaomi_sm6250-common",
     "target_path": "vendor/xiaomi/sm6250-common"
   },
   {
-    "remote":      "fluid-devices",
-    "repository":  "kernel_xiaomi_sdm6250",
+    "remote":      "nekoshirro",
+    "repository":  "platform_kernel_xiaomi_joyeuse",
     "target_path": "kernel/xiaomi/sdm6250"
   }
 ]
