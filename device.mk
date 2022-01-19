@@ -12,7 +12,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/joyeuse/joyeuse-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/google/pixel \
+    hardware/xiaomi \
+    hardware/nxp
 
 # Init scripts
 PRODUCT_COPY_FILES += \
@@ -20,8 +23,11 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    SecureElement \
     NfcNci \
-    Tag
+    Tag \
+    nfc_nci_nxp
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
