@@ -16,7 +16,7 @@
 $(call inherit-product, device/xiaomi/joyeuse/device.mk)
 
 # Inherit some common from AOSP ROM stuff
-$(call inherit-product, vendor/aosp/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
