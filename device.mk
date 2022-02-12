@@ -14,8 +14,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/joyeuse/joyeuse-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/pixel \
+    hardware/google/interfaces \
     hardware/xiaomi \
-    hardware/nxp
+    hardware/nxp \
+    kernel/xiaomi/sm6250
 
 # Init scripts
 PRODUCT_COPY_FILES += \
