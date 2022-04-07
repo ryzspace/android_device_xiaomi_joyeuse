@@ -15,13 +15,13 @@
 # Inherit from joyeuse device tree
 $(call inherit-product, device/xiaomi/joyeuse/device.mk)
 
-# Inherit some common from AOSP ROM stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common from Evolution X stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_joyeuse
+PRODUCT_NAME := evolution_joyeuse
 PRODUCT_DEVICE := joyeuse
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 9 Pro
@@ -33,3 +33,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="raven-user 12 S2B3.220205.007.A1 8133516 release-keys"
 
 BUILD_FINGERPRINT := google/raven/raven:12/S2B3.220205.007.A1/8133516:user/release-keys
+
+# Evolution X Additional Flags
+EVO_BUILD_TYPE := Power-Alliance
+EVO_SIGNED := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GCAM := false
+TARGET_USES_FULL_GAPPS := true
