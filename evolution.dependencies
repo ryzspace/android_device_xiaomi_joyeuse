@@ -1,21 +1,21 @@
 [
   {
-    "remote":      "dnnyhan",
+    "remote":      "tumbal-prjkt",
     "repository":  "platform_device_xiaomi_sm6250-common",
     "target_path": "device/xiaomi/sm6250-common"
   },
   {
-    "remote":      "dnnyhan",
+    "remote":      "tumbal-prjkt",
     "repository":  "platform_vendor_xiaomi_joyeuse",
     "target_path": "vendor/xiaomi/joyeuse"
   },
   {
-    "remote":      "dnnyhan",
+    "remote":      "tumbal-prjkt",
     "repository":  "platform_vendor_xiaomi_sm6250-common",
     "target_path": "vendor/xiaomi/sm6250-common"
   },
   {
-    "remote":      "dnnyhan",
+    "remote":      "tumbal-prjkt",
     "repository":  "platform_kernel_xiaomi_joyeuse",
     "target_path": "kernel/xiaomi/sdm6250"
   }
